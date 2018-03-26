@@ -41,7 +41,46 @@
           <div class="__org-bg">
             <div class="__org-bg-shadow">
               <div class="uk-container uk-container-small __org_container">
+                <div class="uk-padding-small" uk-grid>
+                  <div class="uk-width-1-4@m uk-width-1-2">
+                    <div class="__org_logo">
+                      <!-- logo -->
+                      <a target="_parent" href="index.html">
+                        <img class="uk-logo" src="img/2x/logo@2x.png" />
+                      </a>
+                      <!-- .end logo -->
+                    </div>
+                  </div>
+                  <div class="uk-width-3-4@m uk-width-1-2">
+                    <div class="uk-flex" style="height: 100%">
+                      <!-- menu -->
+                      <div class="__org_menu">
+                        <div class="__top_menu">
+                          <div class="__menu">
+                            <ul class="uk-margin-remove __top_menu_container">
+                              <li><a href="#fr">FR</a></li>
+                              <li><a href="#en">EN</a></li>
+                              <li><a href="#it">IT</a></li>
+                            </ul>
+                          </div>
 
+                        </div>
+                        <div class="__primary_menu">
+                          <div class="__menu">
+                            <ul class="__primary_menu_container">
+                              <li><a href="#">Accueil</a></li>
+                              <li><a href="#">Hébèrgement</a></li>
+                              <li><a href="#">Activites</a></li>
+                              <li><a href="#">Restaurant</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- .end menu -->
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -62,10 +101,10 @@
             <div class="__org_bg_top"></div>
             <div class="uk-section uk-section-large uk-padding-remove">
               <div class="__org_container __org_devider" uk-grid>
-                <div class="uk-width-1-2 __org_devider_bg">
+                <div class="uk-width-1-2@m uk-width-1-1 __org_devider_bg">
                   <p>sdfdffd</p>
                 </div>
-                <div class="uk-width-1-2">
+                <div class="uk-width-1-2@m uk-width-1-1">
                   <p>sdfqsdfsfsdf</p>
                 </div>
               </div>
@@ -102,6 +141,70 @@
 </div>
 
 <style type="text/css">
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .__org_menu {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .__org_menu > .__primary_menu {
+    float: right;
+  }
+  .__org_menu > .__primary_menu .__menu {
+    display: inline-block;
+  }
+
+  .__top_menu .__menu {
+    display: inline-block;
+    float: right;
+  }
+  .__top_menu ul {
+    padding-right: 35px;
+  }
+  .__top_menu ul > li > a {
+    display: block;
+    color: #FFFFFF;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    padding: 5px;
+  }
+
+  .__primary_menu .__menu > ul {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding-right: 30px;
+  }
+  .__menu > ul > li {
+    display: inline-block;
+  }
+  .__primary_menu .__menu > ul > li > a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  .__primary_menu .__menu > ul > li > a:hover,
+  .__top_menu ul > li > a:hover {
+    color: #F6AC62;
+    text-decoration: none;
+  }
+
+  .__primary_menu .__menu li > a:hover::after {
+    content: "";
+    display: block;
+    width: 35%;
+    height: 2px;
+    background: #dca568;
+  }
+
   /* begin first section */
   div.org-first-section .uk-container {
     min-height: 50em;
@@ -219,5 +322,13 @@
     display: block;
   }
 </style>
+
+<script type="text/javascript">
+  (function ($) {
+    $(document).ready(function () {
+      // TODO
+    });
+  })(jQuery)
+</script>
 </body>
 </html>

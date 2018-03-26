@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Orangea</title>
+  <!--[if lt IE 9]>
+  <script src="/assets/js/html5.js"></script>
+  <![endif]-->
+  <script src="libs/lodash.min.js"></script>
+  <script src="libs/jquery/jquery.min.js"></script>
+  <script src="assets/js/orangea.js"></script>
+
+  <script src="libs/uikit/uikit.js"></script>
+  <script src="libs/uikit/uikit-icons.min.js"></script>
+  <script src="libs/semantic/dropdown.min.js"></script>
+  <script src="libs/semantic/transition.min.js"></script>
+  <script src="libs/semantic/form.min.js"></script>
+  <script src="libs/semantic/modal.min.js"></script>
+  <script src="libs/semantic/sidebar.min.js"></script>
+
+  <style type="text/css">
+    @import url("libs/semantic/semantic.css");
+    @import url("libs/semantic/transition.css");
+    @import url("libs/semantic/modal.css");
+    @import url("libs/semantic/sidebar.css");
+    @import url("libs/semantic/form.css");
+    @import url("libs/semantic/dropdown.css");
+    @import url("libs/semantic/icon.css");
+    @import url("libs/uikit/uikit.css");
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,700,800');
+  </style>
+
+</head>
+<body>
+<div class="uk-offcanvas-content">
+  <div id="primary">
+    <div class="primary-content">
+      <div class="uk-section uk-section-large uk-padding-remove-top">
+
+        <!-- section begin -->
+        <div class="org-first-section __org_parent">
+          <div class="__org-bg">
+            <div class="__org-bg-shadow">
+              <div class="uk-container uk-container-small __org_container">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="org-second-section __org_parent">
+          <div class="__org-bg">
+            <div class="__org_bg_top"></div>
+            <div class="uk-container uk-container-small __org_container">
+
+            </div>
+            <div class="__org_bg_bottom"></div>
+          </div>
+        </div>
+
+        <div class="org-three-section __org_parent">
+          <div class="__org-bg">
+            <div class="__org_bg_top"></div>
+            <div class="uk-section uk-section-large uk-padding-remove">
+              <div class="__org_container __org_devider" uk-grid>
+                <div class="uk-width-1-2 __org_devider_bg">
+                  <p>sdfdffd</p>
+                </div>
+                <div class="uk-width-1-2">
+                  <p>sdfqsdfsfsdf</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="__org_bg_bottom"></div>
+          </div>
+        </div>
+
+        <div class="org-four-section __org_parent">
+          <div class="__org-bg">
+            <div class="__org_bg_top"></div>
+            <div class="uk-container uk-container-small __org_container">
+
+            </div>
+            <div class="__org_bg_bottom"></div>
+          </div>
+        </div>
+
+        <div class="org-five-section __org_parent">
+          <div class="__org-bg">
+            <div class="__org_bg_top"></div>
+            <div class="uk-container uk-container-small __org_container">
+
+            </div>
+            <div class="__org_bg_bottom"></div>
+          </div>
+        </div>
+
+        <!--. end section -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  /* begin first section */
+  div.org-first-section .uk-container {
+    min-height: 50em;
+  }
+  div.org-first-section > .__org-bg {
+    background-image: url("img/plage.jpg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* .end */
+
+  /* begin second section */
+  div.org-second-section .__org_bg_bottom {
+    height: 350px;
+    background-image: url("img/2x/second-bottom-bg-5@2x.png");
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+  }
+  div.org-second-section .__org_bg_top {
+    height: 350px;
+    background-image: url("img/2x/second-top-bg-5@2x.png");
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+  }
+  div.org-second-section .uk-container {
+    min-height: 22em;
+  }
+
+  div.org-second-section > .__org-bg {
+    background-image: url("img/2x/second-content-bg-5@2x.png");
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-size: contain;
+  }
+  /* .end */
+
+  /* begin three section */
+  div.org-three-section > .__org-bg {
+    background-image: url("img/hebergement.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+  }
+  /* .end */
+
+  /* begin four  section */
+  div.org-four-section > .__org-bg {
+    background-image: url("img/three-bg.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+  }
+  div.org-four-section .__org_bg_top {
+    height: 350px;
+    background-image: url("img/2x/4-top-bg@2x.png");
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+  }
+  /* .end */
+
+  /* begin five section */
+  div.org-five-section > .__org-bg {
+    background-image: url("img/2x/5-content-bg@2x.png");
+    background-color: #0067cf;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+  }
+  div.org-five-section .__org_bg_top {
+    height: 350px;
+    background-image: url("img/2x/5-top-bg@2x.png");
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+  }
+  div.org-five-section .__org_container {
+
+  }
+  div.org-five-section .__org_bg_bottom {
+    height: 350px;
+    background-image: url("img/2x/5-bottom-bg@2x.png");
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+  }
+  /* .end */
+  .__org_devider > .__org_devider_bg {
+    background-color: rgba(1, 1, 1, 0.47);
+  }
+  .__org_container {
+    min-height: 60em;
+  }
+  .__org-bg-shadow {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f4f4f+0,ffffff+71 */
+    background: none; /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(79,79,79,1) -40%, transparent 45%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(79,79,79,1) -40%,transparent 45%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(79,79,79,1) -40%,transparent 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+  .org-bg, .org-bg-shadow {
+    display: block;
+  }
+</style>
+</body>
+</html>

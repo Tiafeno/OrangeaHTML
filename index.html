@@ -26,6 +26,7 @@
     @import url("libs/semantic/dropdown.css");
     @import url("libs/semantic/icon.css");
     @import url("libs/uikit/uikit.css");
+    @import url("assets/css/menu.css");
     @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,700,800');
   </style>
 
@@ -54,7 +55,8 @@
                   <div class="uk-width-3-4@m uk-width-1-2">
                     <div class="uk-flex" style="height: 100%">
                       <!-- menu -->
-                      <div class="__org_menu">
+                      <header id="header" class="__org_menu alt">
+
                         <div class="__top_menu">
                           <div class="__menu">
                             <ul class="uk-margin-remove __top_menu_container">
@@ -65,10 +67,11 @@
                           </div>
 
                         </div>
-                        <div class="__primary_menu">
+
+                        <div class="__primary_menu uk-visible@m">
                           <div class="__menu">
                             <ul class="__primary_menu_container">
-                              <li><a href="#">Accueil</a></li>
+                              <li><a href="index.html">Accueil</a></li>
                               <li><a href="#">Hébèrgement</a></li>
                               <li><a href="#">Activites</a></li>
                               <li><a href="#">Restaurant</a></li>
@@ -76,7 +79,33 @@
                             </ul>
                           </div>
                         </div>
-                      </div>
+
+                        <div class="__primary_menu_offcanvas uk-hidden@m">
+                          <nav>
+                            <a href="#menu" class="tiny ui right labeled orange icon button">
+                              <i class="right bars icon"></i>
+                              MENU
+                            </a>
+                          </nav>
+                        </div>
+
+                      </header>
+                      <!-- Menu -->
+                      <nav id="menu" class="__nav_offcanvas uk-hidden@m">
+                        <div class="inner">
+                          <h2>Menu</h2>
+                          <div class="">
+                            <ul class="links">
+                              <li><a href="index.html">Accueil</a></li>
+                              <li><a href="#">Hébèrgement</a></li>
+                              <li><a href="#">Activites</a></li>
+                              <li><a href="#">Restaurant</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <a href="#" class="close">Close</a>
+                        </div>
+                      </nav>
                       <!-- .end menu -->
                     </div>
                   </div>
@@ -89,8 +118,21 @@
         <div class="org-second-section __org_parent">
           <div class="__org-bg">
             <div class="__org_bg_top"></div>
-            <div class="uk-container uk-container-small __org_container">
-
+            <div class="uk-container uk-container-small __org_container uk-flex">
+              <div class="uk-grid uk-margin-auto-vertical">
+                <div class="uk-width-1-2@s uk-width-1-1 uk-margin-medium-top">
+                  <img src="img/SVG/orangea-hotels.svg" class="uk-logo uk-margin-medium-right" />
+                </div>
+                <div class="uk-width-1-2@s uk-width-1-1 uk-margin-medium-top">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                    accumsan et iusto odio dignissim qui blandit praesent luptatum zzril elenit augue duis dolore te feugait nulla facilisi.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="__org_bg_bottom"></div>
           </div>
@@ -102,10 +144,10 @@
             <div class="uk-section uk-section-large uk-padding-remove">
               <div class="__org_container __org_devider" uk-grid>
                 <div class="uk-width-1-2@m uk-width-1-1 __org_devider_bg">
-                  <p>sdfdffd</p>
+                  <p></p>
                 </div>
-                <div class="uk-width-1-2@m uk-width-1-1">
-                  <p>sdfqsdfsfsdf</p>
+                <div class="uk-width-1-2@m uk-width-1-1 uk-visible@m">
+                  <p></p>
                 </div>
               </div>
             </div>
@@ -143,6 +185,14 @@
 <style type="text/css">
   html {
     font-family: 'Montserrat', sans-serif;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .__org_parent p,
+  .__org_parent span {
+    color: white;
+    font-size: 12px;
   }
   .__org_menu {
     margin-top: auto;
@@ -186,7 +236,10 @@
   .__primary_menu .__menu > ul > li > a {
     display: block;
     color: white;
-    padding: 10px;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 0.5px;
@@ -197,12 +250,22 @@
     text-decoration: none;
   }
 
+  .__primary_menu .__menu li > a::after {
+    content: "";
+    display: block;
+    width: 35%;
+    height: 2px;
+  }
   .__primary_menu .__menu li > a:hover::after {
     content: "";
     display: block;
     width: 35%;
     height: 2px;
     background: #dca568;
+    -webkit-transition: bakcground 1s; /* Chrome */
+    -moz-transition: bakcground 1s; /* Mozilla */
+    -o-transition: bakcground 1s; /* Opera */
+    transition: background 1s;
   }
 
   /* begin first section */
@@ -325,6 +388,92 @@
 
 <script type="text/javascript">
   (function ($) {
+    var	$window = $(window),
+      $body = $('body'),
+      $header = $('#header'),
+      $banner = $('#banner');
+
+    // Menu.
+    var $menu = $('#menu');
+    $menu._locked = false;
+    $menu._lock = function() {
+      if ($menu._locked)
+        return false;
+      $menu._locked = true;
+      window.setTimeout(function() {
+        $menu._locked = false;
+      }, 350);
+      return true;
+    };
+
+    $menu._show = function() {
+      if ($menu._lock())
+        $body.addClass('is-menu-visible');
+    };
+
+    $menu._hide = function() {
+      if ($menu._lock())
+        $body.removeClass('is-menu-visible');
+    };
+
+    $menu._toggle = function() {
+      if ($menu._lock())
+        $body.toggleClass('is-menu-visible');
+    };
+
+    $menu
+      .appendTo($body)
+      .on('click', function(event) {
+
+        event.stopPropagation();
+
+        // Hide.
+        $menu._hide();
+
+      })
+      .find('.inner')
+      .on('click', '.close', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        // Hide.
+        $menu._hide();
+      })
+      .on('click', function(event) {
+        event.stopPropagation();
+      })
+      .on('click', 'a', function(event) {
+        var href = $(this).attr('href');
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Hide.
+        $menu._hide();
+
+        // Redirect.
+        window.setTimeout(function() {
+          window.location.href = href;
+        }, 350);
+
+      });
+
+    $body
+      .on('click', 'a[href="#menu"]', function(event) {
+        console.log('Menu is clicked!');
+        event.stopPropagation();
+        event.preventDefault();
+
+        // Toggle.
+        $menu._toggle();
+
+      })
+      .on('keydown', function(event) {
+
+        // Hide on escape.
+        if (event.keyCode == 27)
+          $menu._hide();
+
+      });
     $(document).ready(function () {
       // TODO
     });

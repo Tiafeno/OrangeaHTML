@@ -39,4 +39,4 @@
       backgroundPosition();
     });
   });
-})( jQuery );
+})(jQuery);

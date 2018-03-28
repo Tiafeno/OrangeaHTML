@@ -118,13 +118,13 @@
         <div class="org-second-section __org_parent">
           <div class="__org-bg">
             <div class="__org_bg_top"></div>
-            <div class="uk-container uk-container-small __org_container uk-flex">
-              <div class="uk-grid uk-margin-auto-vertical">
-                <div class="uk-width-1-2@s uk-width-1-1 uk-margin-medium-top">
-                  <img src="img/SVG/orangea-hotels.svg" class="uk-logo uk-margin-medium-right" />
+            <div class="uk-section uk-section-large uk-margin-remove uk-padding-remove __org_container uk-flex">
+              <div class="uk-grid uk-margin-auto-vertical uk-padding-large">
+                <div class="uk-width-1-2@m uk-width-1-1 uk-margin-medium-top">
+                  <img src="img/SVG/orangea-hotels.svg" class="uk-logo uk-margin-xlarge-right" />
                 </div>
-                <div class="uk-width-1-2@s uk-width-1-1 uk-margin-medium-top">
-                  <p>
+                <div class="uk-width-1-2@m uk-width-1-1 uk-margin-medium-top uk-flex">
+                  <p class="uk-margin-auto-vertical">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing
                     elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
                     quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
@@ -143,8 +143,22 @@
             <div class="__org_bg_top"></div>
             <div class="uk-section uk-section-large uk-padding-remove">
               <div class="__org_container __org_devider" uk-grid>
-                <div class="uk-width-1-2@m uk-width-1-1 __org_devider_bg">
-                  <p></p>
+                <div class="uk-flex uk-width-1-2@m uk-width-1-1 __org_devider_bg">
+                  <div class="uk-margin-auto-vertical uk-padding-large uk-padding-remove-left uk-padding-remove-right">
+
+                    <div class="uk-padding-large">
+                      <img src="img/svg/hebergement.svg" class="uk-logo" width="350" />
+                      <p>
+                        Le domaine niché au cœur d’une cocoteraie longeant la plage vous propose des chambres ou bungalows disposant chacun d’une terrasse avec vue
+                        sur les jardins ou sur la mer. A l’ombre d’une végétation tropicale luxuriante ou au bord d’une piscine d’eau douce jouxtant la plage,
+                        vous pourrez savourer le calme et l’exotisme de ce lieu authentique et confortable. Selon leur position Orangea Village vous propose
+                        3 catégories de bungalows et chambres.
+                      </p>
+                      <img src="img/SVG/verified.svg" class="" width="250" />
+                    </div>
+
+                  </div>
+
                 </div>
                 <div class="uk-width-1-2@m uk-width-1-1 uk-visible@m">
                   <p></p>
@@ -318,6 +332,9 @@
     background-position: left top;
     background-size: cover;
   }
+  div.org-three-section .__org_container {
+    min-height: 60em;
+  }
   /* .end */
 
   /* begin four  section */
@@ -371,8 +388,13 @@
   .__org_devider > .__org_devider_bg {
     background-color: rgba(1, 1, 1, 0.47);
   }
+
+
+  /**
+  640, 960, -> 959,
+   */
   .__org_container {
-    min-height: 60em;
+    min-height: 19em;
   }
   .__org-bg-shadow {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f4f4f+0,ffffff+71 */
@@ -384,6 +406,13 @@
   .org-bg, .org-bg-shadow {
     display: block;
   }
+
+  /**
+    Override uikit
+  */
+
+
+
 </style>
 
 <script type="text/javascript">

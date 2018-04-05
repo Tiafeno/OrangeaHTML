@@ -1,13 +1,13 @@
 (function ($) {
   'use strict';
   $(document).ready(function () {
-    var org_bg_top = $('.__org_bg_top'),
-      org_bg_bottom = $('.__org_bg_bottom'),
+    var bgTop = $('.__org_bg_top'),
+      bgBottom = $('.__org_bg_bottom'),
       backgroundPosition = function () {
         /**
          * Positionner le fond en haut
          */
-        org_bg_top.each(function (index, el) {
+        bgTop.each(function (index, el) {
           var elementHeight = $(el).height();
           $(el).css({
             top: -elementHeight + "px",
@@ -17,7 +17,7 @@
         /**
          * Positionner le fond en bas
          */
-        org_bg_bottom.each(function (index, el) {
+        bgBottom.each(function (index, el) {
           var elementHeight = $(el).height();
           $(el).css({
             top: elementHeight + "px",

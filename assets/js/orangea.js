@@ -29,7 +29,8 @@
      * Constructeur
      * @private
      */
-    var __init__ = function () {
+    var __init__;
+    __init__ = function () {
       backgroundPosition();
     };
 

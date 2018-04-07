@@ -129,7 +129,7 @@
               <div class="uk-grid uk-margin-auto-vertical uk-padding-large">
                 <div class="uk-width-1-2@m uk-width-1-1 uk-margin-medium-top"
                      uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
-                  <img src="img/SVG/orangea-hotels.svg" class="uk-logo uk-margin-xlarge-right"/>
+                  <img src="img/SVG/orangea-hotels.svg" class="uk-logo uk-padding-large uk-padding-remove-left"/>
                 </div>
                 <div class="uk-width-1-2@m uk-width-1-1 uk-margin-medium-top uk-flex">
                   <p class="uk-margin-auto-vertical" uk-parallax="opacity: 0,1; viewport: 0.3">
@@ -172,7 +172,7 @@
                         position Orangea Village vous propose
                         3 catégories de bungalows et chambres.
                       </p>
-                      <img src="img/SVG/verified.svg" class="" width="250"/>
+                      <img src="img/SVG/verified.svg" onerror="this.onerror=null; this.src='img/2x/verified@2x.png'" width="250"/>
                     </div>
                   </div>
 
@@ -477,7 +477,7 @@
                           dolore te
                           feugait nulla facilisi.
                         </p>
-                        <img src="img/SVG/verified-orange.svg" class="" width="250"/>
+                        <img src="img/SVG/verified-orange.svg" onerror="this.onerror=null; this.src='img/2x/verified-orange@2x.png'" width="250"/>
                       </div>
 
                     </div>
@@ -499,32 +499,33 @@
         <div class="org-seven-section __org_parent">
           <div class="__org-bg">
             <div class="__org_bg_top"></div>
-            <div class="uk-section uk-section-medium __org_container">
-              <div class="__org_support uk-margin-large-bottom" uk-grid>
-                <div class="uk-width-1-2@m uk-width-1-1">
+            <div class="uk-section uk-section-medium uk-padding-remove-bottom __org_container">
+              <div class="__org_support" uk-grid>
+                <div class="uk-width-1-1">
                   <div class="uk-padding-large">
-                    <h2 id="contact" class="ui header __org_header_white" uk-parallax="opacity: 0,1; x: -100, 0; viewport: 0.5">
+                    <h2 id="contact" class="ui header __org_header_white __org_header_border"
+                        uk-parallax="opacity: 0,1; x: -100, 0; viewport: 0.5">
                       Contact
                     </h2>
+                    <div class="uk-margin-medium-bottom">
+                      <p>(+261) 32 66 537 78</p>
+                      <p>(+261) 20 86 939 30</p>
+                      <p>reservation@orangea.net</p>
+                    </div>
+                    <div uk-grid>
+                      <div class="uk-width-1-1 uk-width-1-2@m uk-padding-large  uk-padding-remove-vertical
+                        uk-padding-remove-left __org_devider_border_right">
+                        <img src="img/SVG/map.svg" class="uk-margin-auto uk-display-block" width="450"
+                             onerror="this.onerror=null; this.src='img/2x/map@2x.png'" />
+                      </div>
 
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                      ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                      tation
-                      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                      dolor in
-                      hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
-                      at vero
-                      eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
-                      dolore te
-                      feugait nulla facilisi.
-                    </p>
-                  </div>
-                </div>
-                <div class="uk-width-1-2@m uk-width-1-1">
-                  <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top"
-                       uk-parallax="opacity: 0,1; x: 100, 0; viewport: 0.3">
+                      <div class="uk-width-1-1 uk-width-1-2@m">
+                       <form class="ui form">
 
+                       </form>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
 
@@ -533,6 +534,20 @@
           </div>
         </div>
         <!-- .end s@7 -->
+
+        <footer>
+          <div class="__org_footer">
+            <div class="uk-padding-small" uk-grid>
+              <div class="uk-width-1-6@m uk-width-1-3 uk-margin-medium-left">
+                <a href="#logo" title="Nosy Be Communication">
+                  <img src="img/SVG/nb-communication.svg" class="uk-logo" width="80"
+                       onerror="this.onerror=null; this.src='img/2x/nb-communication@2x.png'">
+                </a>
+              </div>
+              <div class="uk-width-5-6@m uk-width-2-3"></div>
+            </div>
+          </div>
+        </footer>
 
       </div>
     </div>
@@ -837,11 +852,43 @@
     font-size: 5.6em;
     color: white !important;
   }
+  .__org_header_border {
+
+  }
+  .__org_header_border::after {
+    content: " ";
+    display: block;
+    position: relative;
+    width: 2em;
+    height: 4px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #ffffff;
+  }
 
   .__org_devider > .__org_devider_bg {
     background-color: rgba(1, 1, 1, 0.47);
     position: relative;
     z-index: 7;
+  }
+
+  .__org_devider_border_right {
+    border-right: 2px solid #bbbaba;
+  }
+
+  .__org_devider_border_left {
+    border-left: 2px solid #bbbaba;
+  }
+
+  @media (max-width: 960px)  {
+    .__org_devider_border_right {
+      border-right: none;
+    }
+
+    .__org_devider_border_left {
+      border-left: none;
+    }
   }
 
   .__org_support {
@@ -892,7 +939,9 @@
     position: relative;
     z-index: 9;
   }
-
+  .__org_footer {
+    background: #0f0f10;
+  }
   /**
   Titre et sous-titre
   **/
@@ -927,7 +976,7 @@
 
     $(document).ready(function () {
       // TODO
-      $('.__org_parallax').parallax("30%", 0.1);
+      $('.__org_parallax').parallax("0%", 0.1, true);
       $('.__org_parallax_last').parallax("20%", 0.2);
     });
 

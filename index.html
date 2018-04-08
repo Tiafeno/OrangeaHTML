@@ -46,13 +46,13 @@
         <div class="org-first-section __org_parent">
           <div class="__org-bg __org_parallax" >
             <div class="__org-bg-shadow">
-              <div class="uk-container uk-container-small __org_container menu-container">
+              <div class="uk-container __org_container menu-container">
                 <div class="uk-padding-small" uk-grid>
                   <div class="uk-width-1-4@m uk-width-1-2">
                     <div class="__org_logo">
                       <!-- logo -->
                       <a target="_parent" href="index.html">
-                        <img class="uk-logo" src="img/2x/logo@2x.png"/>
+                        <img class="uk-logo" width="180" src="img/2x/logo@2x.png"/>
                       </a>
                       <!-- .end logo -->
                     </div>
@@ -76,11 +76,11 @@
                         <div class="__primary_menu uk-visible@m">
                           <div class="__menu">
                             <ul class="__primary_menu_container">
-                              <li><a href="index.html">Accueil</a></li>
-                              <li><a href="#">Hébèrgement</a></li>
-                              <li><a href="#">Activites</a></li>
-                              <li><a href="#">Restaurant</a></li>
-                              <li><a href="#">Contact</a></li>
+                              <li><a href="#primary">Accueil</a></li>
+                              <li><a href="#hebergement">Hébèrgement</a></li>
+                              <li><a href="#activites">Activites</a></li>
+                              <li><a href="#restaurant">Restaurant</a></li>
+                              <li><a href="#contact">Contact</a></li>
                             </ul>
                           </div>
                         </div>
@@ -99,13 +99,13 @@
                       <nav id="menu" class="__nav_offcanvas uk-hidden@m">
                         <div class="inner">
                           <h2>Menu</h2>
-                          <div class="">
+                          <div class="__menu">
                             <ul class="links">
-                              <li><a href="index.html">Accueil</a></li>
-                              <li><a href="#">Hébèrgement</a></li>
-                              <li><a href="#">Activites</a></li>
-                              <li><a href="#">Restaurant</a></li>
-                              <li><a href="#">Contact</a></li>
+                              <li><a href="#primary">Accueil</a></li>
+                              <li><a href="#hebergement">Hébèrgement</a></li>
+                              <li><a href="#activites">Activites</a></li>
+                              <li><a href="#restaurant">Restaurant</a></li>
+                              <li><a href="#contact">Contact</a></li>
                             </ul>
                           </div>
                           <a href="#" class="close">Close</a>
@@ -126,24 +126,28 @@
           <div class="__org-bg">
             <div class="__org_bg_top"></div>
             <div class="uk-section uk-section-large uk-margin-remove uk-padding-remove __org_container uk-flex">
-              <div class="uk-grid uk-margin-auto-vertical uk-padding-large">
-                <div class="uk-width-1-2@m uk-width-1-1 uk-margin-medium-top"
-                     uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
+              <div class="uk-grid uk-margin-auto-vertical uk-padding-large uk-padding-remove-vertical">
+                <div class="uk-width-1-2@m uk-width-1-1 ">
                   <img src="img/SVG/orangea-hotels.svg" onerror="this.onerror=null; this.src='img/2x/orangea-hotels@2x.png'"
-                       class="uk-logo uk-padding-large uk-padding-remove-left"/>
+                       class="uk-logo uk-padding-large uk-padding-remove-left uk-padding-remove-vertical"/>
                 </div>
-                <div class="uk-width-1-2@m uk-width-1-1 uk-margin-medium-top uk-flex">
-                  <p class="uk-margin-auto-vertical" uk-parallax="opacity: 0,1; viewport: 0.3">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-                    enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure
-                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                    facilisis at vero eros et
-                    accumsan et iusto odio dignissim qui blandit praesent luptatum zzril elenit augue duis dolore te
-                    feugait nulla facilisi.
-                  </p>
+                <div class="uk-width-1-2@m uk-width-1-1 uk-flex">
+                  <div class="uk-margin-auto-vertical">
+
+                    <div class="uk-margin-medium-top">
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                        enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure
+                        dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                        facilisis at vero eros et
+                        accumsan et iusto odio dignissim qui blandit praesent luptatum zzril elenit augue duis dolore te
+                        feugait nulla facilisi.
+                      </p>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
@@ -163,7 +167,7 @@
 
                   <div class="uk-margin-auto-vertical uk-padding-large uk-padding-remove-left uk-padding-remove-right">
                     <div class="uk-padding-large __org_support" id="hebergement">
-                      <img src="img/svg/hebergement.svg" onerror="this.onerror=null; this.src='img/2x/hebergement@2x.png'" class="uk-logo" width="350"/>
+                      <img src="img/SVG/hebergement.svg" onerror="this.onerror=null; this.src='img/2x/hebergement@2x.png'" class="uk-logo" width="350"/>
                       <p class="uk-margin-large-top uk-margin-large-bottom">
                         Le domaine niché au cœur d’une cocoteraie longeant la plage vous propose des chambres ou
                         bungalows disposant chacun d’une terrasse avec vue
@@ -310,7 +314,7 @@
         <div class="org-five-section __org_parent">
           <div class="__org-bg">
             <div class="__org_bg_top"></div>
-            <div class="uk-section uk-section-large __org_container">
+            <div class="uk-section uk-section-large uk-padding-remove-bottom __org_container">
               <div class="__org_support uk-margin-large-bottom" uk-grid>
                 <div class="uk-width-1-2@m uk-width-1-1">
                   <div class="uk-padding-large uk-padding-remove-top">
@@ -462,8 +466,8 @@
                     style="position:relative; width: 100%;">
                     <div class="uk-padding-large __org_support">
 
-                      <div class="">
-                        <h2 id="restaurant" class="ui header __org_header_white" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.3">
+                      <div id="restaurant" class="">
+                        <h2 class="ui header __org_header_white" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.3">
                           Restaurant
                         </h2>
                         <p class="uk-margin-large-top uk-margin-large-bottom">
@@ -503,7 +507,7 @@
             <div class="uk-section uk-section-medium uk-padding-remove-bottom __org_container">
               <div class="__org_support" uk-grid>
                 <div class="uk-width-1-1">
-                  <div class="uk-padding-large">
+                  <div class="uk-padding-large uk-padding-remove-top">
                     <h2 id="contact" class="ui header __org_header_white __org_header_border"
                         uk-parallax="opacity: 0,1; x: -100, 0; viewport: 0.5">
                       Contact
@@ -666,7 +670,7 @@
 
   /* begin first section */
   div.org-first-section .uk-container {
-    min-height: 50em;
+    min-height: 40em;
   }
 
   div.org-first-section > .__org-bg {
@@ -840,6 +844,16 @@
   /* .end */
 
   /* seven section */
+  div.org-seven-section .__org_bg_top {
+    height: 350px;
+    background-image: url("img/2x/6-top-bg@2x.png");
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 8;
+  }
+
   .org-seven-section .__org-bg {
     background-color: #282525;
   }
@@ -970,15 +984,40 @@
 
 <script type="text/javascript">
   (function ($) {
-    var $window = $(window),
-      $body = $('body'),
-      $header = $('#header'),
-      $banner = $('#banner');
+    var $window, $body, $header, $banner;
+    $window = $(window);
+    $body = $('body');
+    $header = $('#header');
+    $banner = $('#banner');
 
     $(document).ready(function () {
-      // TODO
-      $('.__org_parallax').parallax("0%", 0.1, true);
+      var windowHeight;
+      var navMenu = $( ".__menu" ).find( 'li' );
+      navMenu.each(function (index, el) {
+        $( el ).find( "a" ).on("click", function () {
+          var target = $(this).attr('href');
+          $( "html, body" ).stop().animate({
+            scrollTop: $( target ).offset().top - 20
+          }, 1000);
+        });
+      });
+
+      $('.__org_parallax').parallax("50%", 0.1, true);
       $('.__org_parallax_last').parallax("20%", 0.2);
+      var updateSection = function () {
+        windowHeight = $(window).innerHeight();
+        var _1_container = $(".org-first-section").find('.__org_container');
+        var _2_container = $(".org-second-section").find(".__org_container");
+        var newContainerHeight;
+        newContainerHeight = Math.abs(windowHeight - _2_container.height());
+        _1_container.css({
+          "min-height": newContainerHeight + "px"
+        });
+      };
+      updateSection();
+      $(window).resize(function () {
+        updateSection();
+      });
     });
 
     // Menu.

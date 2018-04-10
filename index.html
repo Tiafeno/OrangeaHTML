@@ -37,6 +37,12 @@
 
 </head>
 <body>
+
+<span class="goup uk-margin-small-right uk-position-fixed uk-position-bottom-right uk-button uk-button-danger"
+      uk-icon="icon: chevron-up; ratio: 2" style="padding: 0px 5px 0px 5px; z-index: 999; bottom: 80px"
+      title="Vers le haut" uk-tooltip="pos: left" >
+</span>
+
 <div class="uk-offcanvas-content">
   <div id="primary">
     <div class="primary-content">
@@ -46,8 +52,8 @@
         <div class="org-first-section __org_parent">
           <div class="__org-bg __org_parallax" >
             <div class="__org-bg-shadow">
-              <div class="uk-container __org_container menu-container">
-                <div class="uk-padding-small" uk-grid>
+              <div class="uk-container uk-container-large __org_container menu-container">
+                <div class="uk-padding-large uk-padding-remove-top uk-margin-medium-top"  uk-grid>
                   <div class="uk-width-1-4@m uk-width-1-2">
                     <div class="__org_logo">
                       <!-- logo -->
@@ -125,11 +131,11 @@
         <div class="org-second-section __org_parent">
           <div class="__org-bg">
             <div class="__org_bg_top"></div>
-            <div class="uk-section uk-section-large uk-margin-remove uk-padding-remove __org_container uk-flex">
-              <div class="uk-grid uk-margin-auto-vertical uk-padding-large uk-padding-remove-vertical">
-                <div class="uk-width-1-2@m uk-width-1-1 ">
+            <div class="uk-container uk-container-large  __org_container uk-flex">
+              <div class="uk-padding-large uk-padding-remove-vertical uk-grid">
+                <div class="uk-width-1-2@m uk-width-1-1 uk-flex">
                   <img src="img/SVG/orangea-hotels.svg" onerror="this.onerror=null; this.src='img/2x/orangea-hotels@2x.png'"
-                       class="uk-logo uk-padding-large uk-padding-remove-left uk-padding-remove-vertical"/>
+                       class="uk-logo uk-padding uk-padding-remove-left uk-padding-remove-bottom margin-auto-vertical" width="500"/>
                 </div>
                 <div class="uk-width-1-2@m uk-width-1-1 uk-flex">
                   <div class="uk-margin-auto-vertical">
@@ -161,10 +167,10 @@
           <div class="__org-bg __org_parallax" >
             <div class="__org_bg_top"></div>
 
-            <div class="uk-section uk-section-large uk-padding-remove">
-              <div class="__org_container __org_devider" uk-grid>
-                <div class="uk-flex uk-width-1-2@m uk-width-1-1 __org_devider_bg">
-
+            <div class="__org_container uk-container uk-container-large uk-padding-remove __org_devider">
+              <div class="__org_devider_bg"></div>
+              <div class="uk-padding-large" uk-grid>
+                <div class="uk-flex uk-width-1-2@m uk-width-1-1">
                   <div class="uk-margin-auto-vertical uk-padding-large uk-padding-remove-left uk-padding-remove-right">
                     <div class="uk-padding-large __org_support" id="hebergement">
                       <img src="img/SVG/hebergement.svg" onerror="this.onerror=null; this.src='img/2x/hebergement@2x.png'" class="uk-logo" width="350"/>
@@ -197,10 +203,10 @@
         <div class="org-four-section __org_parent">
           <div class="__org-bg">
             <div class="__org_bg_top"></div>
-            <div class="uk-section uk-section-large __org_container">
-              <div class="__org_support uk-margin-large-bottom" uk-grid>
+            <div class="uk-container uk-container-large __org_container">
+              <div class="__org_support uk-padding-large uk-margin-large-bottom" uk-grid>
                 <div class="uk-width-1-2@m uk-width-1-1">
-                  <div class="uk-padding-large uk-padding-remove-top">
+                  <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-top">
                     <h2 id="activites" class="ui header" uk-parallax="opacity: 0,1; x: -100, 0; viewport: 0.5">
                       Activités
                       <div class="sub header">Resort</div>
@@ -230,7 +236,7 @@
                   </div>
                 </div>
                 <div class="uk-width-1-2@m uk-width-1-1">
-                  <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top"
+                  <div class="uk-padding-large uk-padding-remove-top"
                        uk-parallax="opacity: 0,1; x: 100, 0; viewport: 0.3">
                     <!--<img src="img/SVG/activity-gallery.svg" onerror="this.onerror=null; this.src='img/2x/activity-gallery@2x.png'">-->
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -302,7 +308,6 @@
                     </svg>
                   </div>
                 </div>
-
               </div>
             </div>
             <div class="__org_bg_bottom"></div>
@@ -314,10 +319,10 @@
         <div class="org-five-section __org_parent">
           <div class="__org-bg">
             <div class="__org_bg_top"></div>
-            <div class="uk-section uk-section-large uk-padding-remove-bottom __org_container">
-              <div class="__org_support uk-margin-large-bottom" uk-grid>
+            <div class="uk-container uk-container-large uk-padding-remove-bottom __org_container">
+              <div class="__org_support uk-padding-large uk-margin-large-bottom" uk-grid>
                 <div class="uk-width-1-2@m uk-width-1-1">
-                  <div class="uk-padding-large uk-padding-remove-top">
+                  <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-top">
                     <h2 class="ui header __org_header_white" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">
                       Activités
                       <div class="sub header">Excursion</div>
@@ -351,7 +356,7 @@
                   </div>
                 </div>
                 <div class="uk-width-1-2@m uk-width-1-1">
-                  <div class="uk-padding-large uk-padding-remove-bottom uk-padding-remove-top" uk-parallax="opacity: 0,1; x: 100, 0; viewport: 0.3">
+                  <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-bottom uk-padding-remove-top" uk-parallax="opacity: 0,1; x: 100, 0; viewport: 0.3">
                     <!--<img src="img/SVG/activity-gallery.svg" onerror="this.onerror=null; this.src='img/2x/activity-gallery@2x.png'">-->
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                          viewBox="115 0 569.16 585.51">
@@ -458,9 +463,10 @@
           <div class="__org-bg __org_parallax_last">
             <div class="__org_bg_top"></div>
 
-            <div class="uk-section uk-section-large uk-padding-remove">
-              <div class="__org_container __org_devider" uk-grid>
-                <div class="uk-flex uk-width-1-2@m uk-width-1-1 __org_devider_bg">
+            <div class="__org_container uk-container uk-container-large uk-padding-remove __org_devider">
+              <div class="__org_devider_bg"></div>
+              <div class="uk-padding-large uk-padding-remove-vertical" uk-grid>
+                <div class="uk-flex uk-width-1-2@m uk-width-1-1 ">
 
                   <div class="uk-margin-auto-vertical uk-padding-large uk-padding-remove-left uk-padding-remove-right"
                     style="position:relative; width: 100%;">
@@ -504,10 +510,10 @@
         <div class="org-seven-section __org_parent">
           <div class="__org-bg">
             <div class="__org_bg_top"></div>
-            <div class="uk-section uk-section-medium uk-padding-remove-bottom __org_container">
-              <div class="__org_support" uk-grid>
+            <div class="uk-container uk-container-large uk-padding-remove-bottom __org_container">
+              <div class="__org_support uk-padding-large uk-margin-large-bottom" uk-grid>
                 <div class="uk-width-1-1">
-                  <div class="uk-padding-large uk-padding-remove-top">
+                  <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-top">
                     <h2 id="contact" class="ui header __org_header_white __org_header_border"
                         uk-parallax="opacity: 0,1; x: -100, 0; viewport: 0.5">
                       Contact
@@ -624,6 +630,9 @@
   .__menu > ul > li {
     display: inline-block;
   }
+  .__nav_offcanvas .__menu > ul > li {
+    display: block !important;
+  }
 
   .__primary_menu .__menu > ul > li > a {
     display: block;
@@ -713,6 +722,18 @@
     background-size: contain;
   }
 
+/*
+  div.org-second-section .__org-bg > .__org_container {
+    width: 1164px;
+  }
+  @media (max-width: 1600px) {
+    div.org-second-section .__org-bg > .__org_container {
+      width: 1164px;
+    }
+  }
+*/
+
+
   /* .end */
 
   /* begin three section */
@@ -734,7 +755,7 @@
     background-image: url("img/three-bg.png");
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 85%;
+    background-size: 75%;
   }
 
   div.org-four-section .__org_container {
@@ -884,8 +905,12 @@
 
   .__org_devider > .__org_devider_bg {
     background-color: rgba(1, 1, 1, 0.47);
-    position: relative;
+    position: absolute;
     z-index: 7;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .__org_devider_border_right {
@@ -992,31 +1017,72 @@
 
     $(document).ready(function () {
       var windowHeight;
-      var navMenu = $( ".__menu" ).find( 'li' );
+      var navMenu;
+      navMenu = $( ".__menu" ).find( 'li' );
       navMenu.each(function (index, el) {
         $( el ).find( "a" ).on("click", function () {
           var target = $(this).attr('href');
           $( "html, body" ).stop().animate({
             scrollTop: $( target ).offset().top - 20
-          }, 1000);
+          }, 2500, function () {
+            var goup = $('.goup');
+            goup.fadeIn('slow', function(){});
+          });
         });
       });
 
       $('.__org_parallax').parallax("50%", 0.1, true);
       $('.__org_parallax_last').parallax("20%", 0.2);
+      /** Scroll top */
+      $( '.goup' )
+        .hide()
+        .on('click', function(){
+          $('html, body').stop().animate({
+            scrollTop: $( 'html, body' ).offset().top
+          }, 1000, function () {
+          });
+        });
+
+      $( window ).scroll(function( event ){
+        var LimiteTop = 200; // 200px
+        var win = $( window );
+        var Top = $( win ).scrollTop();
+        scrollStatus =  (Top > LimiteTop) ? true : false;
+        if (scrollStatus) {
+          // $( '.goup' ).fadeIn('slow', function(){});
+          var goup = $('.goup');
+          if (goup.is(":visible")) return false;
+          goup.fadeIn('slow', function(){});
+        } else { $( '.goup' ).fadeOut('slow', function(){}); }
+      });
+
       var updateSection = function () {
         windowHeight = $(window).innerHeight();
-        var _1_container = $(".org-first-section").find('.__org_container');
-        var _2_container = $(".org-second-section").find(".__org_container");
+        var _1_container = $( ".org-first-section" ).find( ".__org_container" );
+        var _2_container = $( ".org-second-section" ).find( ".__org_container" );
         var newContainerHeight;
         newContainerHeight = Math.abs(windowHeight - _2_container.height());
         _1_container.css({
           "min-height": newContainerHeight + "px"
         });
       };
+      var updateDevider = function () {
+        var devider = $( ".__org_parent" ).find( ".__org_devider" );
+        var deviderWidth = devider.width();
+        devider.each(function (index, el) {
+          var devideBg = $(el).find( ".__org_devider_bg" );
+          var mesure;
+          mesure =  (deviderWidth > 959) ? deviderWidth / 2 : deviderWidth;
+          devideBg.css({
+            width: mesure + 70 + "px"
+          });
+        });
+      };
       updateSection();
+      updateDevider();
       $(window).resize(function () {
         updateSection();
+        updateDevider();
       });
     });
 

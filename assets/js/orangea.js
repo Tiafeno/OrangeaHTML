@@ -18,7 +18,7 @@
        * Positionner le fond en bas
        */
       bgBottom.each(function (index, el) {
-        var elementHeight = $(el).height();
+        var elementHeight = $(el).height() - 3;
         $(el).css({
           top: elementHeight + "px",
           "margin-top": -elementHeight + "px"

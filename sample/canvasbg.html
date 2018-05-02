@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr-FR" prefix="og: http://ogp.me/ns#" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=525, initial-scale=0.9">
+  <title>Orangea Hotels Madagascar</title>
+  <!--[if lt IE 9]>
+  <script src="../assets/js/html5.js"></script>
+  <![endif]-->
+  <script src="../libs/lodash.min.js"></script>
+  <script src="../libs/raphael/raphael.min.js"></script>
+  <script src="../libs/jquery/jquery.min.js"></script>
+  <!--<script src="libs/stellar/stellar.js"></script>-->
+
+  <style type="text/css">
+    @import url("../libs/uikit/uikit.css");
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,700,800');
+  </style>
+
+</head>
+<body>
+  <div class="uk-section uk-section-large">
+    <div class="uk-container uk-container-small">
+      <canvas class="_bg_top"></canvas>
+    </div>
+
+  </div>
+  <script type="text/javascript">
+    (function($) {
+      $(document).ready(function () {
+        let cx = document.querySelector("._bg_top").getContext("2d");
+        cx.beginPath();
+        cx.moveTo(10, 90);
+        cx.bezierCurveTo(10, 10, 90, 10, 50, 90);
+        cx.closePath();
+        cx.stroke();
+      });
+    })(jQuery)
+  </script>
+  <style type="text/css">
+    canvas._bg_top {
+      width: 100%;
+      position: relative;
+      z-index: auto;
+      height: 50px;
+    }
+  </style>
+</body>
+</html>
